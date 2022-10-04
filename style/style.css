@@ -41,6 +41,10 @@ body {
   font-size: large;
 }
 
+.noty {
+  width: 45% !important;
+}
+
 .firstFlexChild {
   flex: 2;
   font-family: "Passions Conflict", cursive;
