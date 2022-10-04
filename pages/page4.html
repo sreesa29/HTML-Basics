@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/dfaf7231c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Page 4</title>
+  </head>
+  <body>
+    <div class="sticky-top">
+      <p class="firstFlexChild">Sree Sankar</p>
+
+      <label class="secondFlexChild"
+        ><input
+          type="checkbox"
+          name="checkbox"
+          id="checkboxD"
+          onchange="lightThemeChnage()"
+        />
+        Dark Theme</label
+      >
+
+      <p
+        class="close-button wobble-hor-top thirdFlexChild"
+        onclick="functionToclose()"
+      >
+        &#x2715;
+      </p>
+    </div>
+
+    <center>
+      <h1>HTML &lt;img&gt; tag</h1>
+    </center>
+
+    <h3>how to use this tag?</h3>
+    <p>
+      Simply we can do this by the help of famous attribute called - "src" means
+      (source)
+    </p>
+
+    <p style="background-color: gray; color: white">
+      for eg:<br />
+      &lt;img <em>src</em>="img_girl.jpg" <em>alt</em>="Girl in a jacket"
+      <em>width</em>="500" <em>height</em>="600"&gt; <br />
+    </p>
+    <p>
+      here "img" is a tag, "src" is an attribute; and it is denoting the link of
+      the local/online source to the original image, width and height are
+      dimensions of the image.
+
+      <em>
+        another important attribute is "alt", if image hasn't loaded the text in
+        alt will display instead of the image and alt tag will be helpful for
+        SEO also.
+      </em>
+    </p>
+
+    <p>
+      <img
+        src="https://media.giphy.com/media/gd09Y2Ptu7gsiPVUrv/giphy.gif"
+        class="centre event"
+        alt="spongebob why?"
+      />
+    </p>
+    <p>code of the above pic is (ignore the alignment)</p>
+    <pre>
+        <code>
+        &lt;img
+        src="https://media.giphy.com/giphy.gif"
+        class="centre"
+        alt="spongebob why?"
+      /&gt;
+        </code>
+    </pre>
+    <h3 class="pagenav">
+      <span>&laquo;</span>
+      <a href="../index.html"> 1 </a>
+      <a href="./page2.html"> 2</a>
+      <a href="./page3.html"> 3</a>
+      <a href="./page4.html" class="active"> 4</a>
+      <a href="./page5.html"> 5</a>
+      <a href="./page6.html"> 6</a>
+      <a href="./page7.html"> 7</a>
+      <a href="./page8.html"> 8</a>
+      <a href="./page9.html"> 9</a>
+      <a href="./page10.html">10</a>
+      <a href="./page11.html">11</a>
+      <span>&raquo;</span>
+    </h3>
+    <footer class="nameFooter">
+      <p>&copy; Sree Sankar</p>
+
+      <div class="flexing">
+        <a
+          href="https://github.com/sreesa29"
+          target="_blank"
+          style="text-decoration: none; color: white"
+        >
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a
+          href="https://in.linkedin.com/in/sree-sankar-a-s-b44258215"
+          target="_blank"
+          style="text-decoration: none; color: white"
+        >
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="../style/script.js"></script>
+</html>

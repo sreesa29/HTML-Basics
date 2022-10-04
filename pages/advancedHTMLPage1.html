@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML Tags</title>
+    <link rel="stylesheet" href="./../style/style.css" />
+  </head>
+  <body>
+    <div class="sticky-top">
+      <p class="firstFlexChild">Sree Sankar</p>
+
+      <label class="secondFlexChild"
+        ><input
+          type="checkbox"
+          name="checkbox"
+          id="checkboxD"
+          onchange="lightThemeChnage()"
+        />
+        Dark Theme</label
+      >
+
+      <p
+        class="close-button wobble-hor-top thirdFlexChild"
+        onclick="functionToclose()"
+      >
+        &#x2715;
+      </p>
+    </div>
+
+    <!-- forms -->
+    <center>
+      <h1>Advanced HTML Tags!</h1>
+      <h2>HTML Multimedia</h2>
+    </center>
+    <h4>What is Multimedia?</h4>
+    <p>
+      Multimedia comes in many different formats. It can be almost anything you
+      can hear or see, like images, music, sound, videos, records, films,
+      animations, and more. Web pages often contain multimedia elements of
+      different types and formats.
+    </p>
+    <h4>Common Video Formats that HTML Supports</h4>
+    <p>Only MP4, WebM, and Ogg video are supported by the HTML standard.</p>
+    <h4>Common Audio Formats that HTML Supports</h4>
+    <p>Only MP3, WAV, and Ogg audio are supported by the HTML standard..</p>
+    <h4><u>Let's watch a video</u></h4>
+    <video width="320" height="240" controls autoplay muted>
+      <source src="../assets/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support HTML video.
+    </video>
+    <h4>How it works</h4>
+    <pre>
+        <code>
+&lt;video width="320" height="240" 
+controls autoplay muted&gt;
+
+    &lt;source src="../assets/mov_bbb.mp4" 
+    type="video/mp4" /&gt;
+
+    Your browser does not support HTML video.
+
+
+&lt;/video&gt;      
+        </code>
+    </pre>
+    <p>
+      The "controls" attribute adds video controls, like play, pause, and
+      volume. It is a good idea to always include width and height attributes.
+      If "height" and "width" are not set, the page might flicker while the
+      video loads. The &lt;source&gt; element allows you to specify alternative
+      video files which the browser may choose from. The browser will use the
+      first recognized format. The text between the &lt;video&gt; and
+      &lt;/video&gt; tags will only be displayed in browsers that do not support
+      the &lt;video&gt; element.
+      <br /><br />
+      Chromium browsers do not allow autoplay in most cases. However, muted
+      autoplay is always allowed. Add muted after autoplay to let your video
+      start playing automatically (but muted):
+    </p>
+
+    <h4><u>Let's hear an audio</u></h4>
+    <audio controls autoplay muted>
+      <source src="../assets/horse.ogg" type="audio/ogg" />
+      <source src="horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <h4>How it works</h4>
+    <pre>
+        <code>
+&lt;audio controls autoplay muted&gt;
+
+&lt;source src="../assets/horse.ogg" 
+type="audio/ogg" /&gt;
+&lt;source src="horse.mp3" type="audio/mpeg" /&gt;
+
+Your browser does not support the audio element.
+
+&lt;/audio&gt;      
+        </code>
+    </pre>
+    <p>
+      The controls attribute adds audio controls, like play, pause, and volume.
+      The &ltsource&gt element allows you to specify alternative audio files
+      which the browser may choose from. The browser will use the first
+      recognized format. The text between the &ltaudio&gt and &lt/audio&gt tags
+      will only be displayed in browsers that do not support the &ltaudio&gt
+      element.
+      <br /><br />
+      Chromium browsers do not allow autoplay in most cases. However, muted
+      autoplay is always allowed. Add muted after autoplay to let your audio
+      file start playing automatically (but muted):
+    </p>
+
+    <h1>What is HTML Canvas?</h1>
+
+    <p>
+      The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via
+      JavaScript. The &lt;canvas&gt; element is only a container for graphics.
+      You must use JavaScript to actually draw the graphics. Canvas has several
+      methods for drawing paths, boxes, circles, text, and adding images.
+    </p>
+    <h4>Canvas look like?</h4>
+    <p>Here is an example of a basic, empty canvas:</p>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    ></canvas>
+
+    <p>Code:</p>
+    <pre>
+        <code>
+    &lt;canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"&gt;&lt;/canvas&gt;
+            
+        </code>
+    </pre>
+  </body>
+  <script src="../style/script.js"></script>
+</html>

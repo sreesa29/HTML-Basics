@@ -5,17 +5,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>HTML BASICS</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/dfaf7231c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>HTML Basics :: Sree Sankar</title>
   </head>
   <body>
+    <div class="sticky-top">
+      <p class="firstFlexChild">Sree Sankar</p>
+
+      <label class="secondFlexChild"
+        ><input
+          type="checkbox"
+          name="checkbox"
+          id="checkboxD"
+          onchange="lightThemeChnage()"
+        />
+        Dark Theme</label
+      >
+
+      <p
+        class="close-button wobble-hor-top thirdFlexChild"
+        onclick="functionToclose()"
+      >
+        &#x2715;
+      </p>
+    </div>
+
     <!-- Basic HTML -->
     <h1>
       <center>
-        <u>Web Basics (don't use center tags)</u>
-        <p>SREE SANKAR</p>
-        <br />
+        <u>HTML Basics</u>
+        <br /><br />
         <img
+          class="event"
           src="https://i.giphy.com/media/aUPfvs5MOXpxm/giphy.webp"
           alt="web"
         />
@@ -130,18 +155,20 @@
       I am using for denoting CODE see I am so useful, only sometimes you have
       to use me; like very rarely
     </h4>
-    <code>
-      #include stdio.h #include conio.h........ I am useful, isn't it? that
-      doesn't mean you can write.<br />
-      html code inside of me. see I know... now you also thinking I am garbage
-      piece of shit! but you know? you can use HTML Entities! Okay let's learn
-      what is HTML entities.<br />
+    <code> #include stdio.h #include conio.h </code>
+    <p>
+      I am useful, isn't it? that doesn't mean you can write HTML code inside of
+      me. <br />
+      See, I know... Now you also thinking I am garbage piece of shit!<br />
+      But you know? you can use HTML Entities for that! Okay, let's learn what
+      is HTML entities.<br />
       Character entities are used to display reserved characters in HTML.<br />
-      So, we can display by using its name. you can display html entities by its
-      name or number. <br />
-    </code>
+      for eg symbol like "&lt;", "&gt;" and so on.. <br />
+      So, we can display these symbol by its code name. Remember you can display
+      HTML entities by its name or number. <br />
+    </p>
     <br />
-    <br />
+
     <h3>
       You have to use &ltpre&gt tag before &ltcode&gt tag. otherwise, your code
       will be break down by the browser.
@@ -187,19 +214,42 @@
       <u>I am &ltu&gt tag</u> I do underlines :)
     </p>
 
-    <h3 class="pagenav">
-      <a href="./index.html">&lt;&lt;&lt; 1 </a>
-      <a href="./page2.html"> || 2</a>
-      <a href="./page3.html"> || 3</a>
-      <a href="./page4.html"> || 4</a>
-      <a href="./page5.html"> || 5</a>
-      <a href="./page6.html"> || 6</a>
-      <a href="./page7.html"> || 7</a>
-      <a href="./page8.html"> || 8</a>
-      <a href="./page9.html"> || 9</a>
-      <a href="./page10.html">|| 10</a>
-      <a href="./page11.html">|| 11 ||&gt;&gt;&gt;</a>
-    </h3>
+    <div class="pagenav">
+      <span>&laquo;</span>
+      <a href="./index.html" class="active"> 1 </a>
+      <a href="./pages/page2.html"> 2</a>
+      <a href="./pages/page3.html"> 3</a>
+      <a href="./pages/page4.html"> 4</a>
+      <a href="./pages/page5.html"> 5</a>
+      <a href="./pages/page6.html"> 6</a>
+      <a href="./pages/page7.html"> 7</a>
+      <a href="./pages/page8.html"> 8</a>
+      <a href="./pages/page9.html"> 9</a>
+      <a href="./pages/page10.html">10</a>
+      <a href="./pages/page11.html">11</a>
+      <span>&raquo;</span>
+    </div>
     <!-- text fomats ends here -->
+    <footer class="nameFooter">
+      <p>&copy; Sree Sankar</p>
+
+      <div class="flexing">
+        <a
+          href="https://github.com/sreesa29"
+          target="_blank"
+          style="text-decoration: none; color: white"
+        >
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a
+          href="https://in.linkedin.com/in/sree-sankar-a-s-b44258215"
+          target="_blank"
+          style="text-decoration: none; color: white"
+        >
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </a>
+      </div>
+    </footer>
   </body>
+  <script src="./style/script.js"></script>
 </html>
